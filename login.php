@@ -16,10 +16,10 @@ $smarty->config_dir = 'configs';
   }
 
 
-  function errorMsg(){
+  //function errorMsg(){
     $ErrorMsg="Wrong email or password";
-    return $ErrorMsg;
-  }
+    //return $ErrorMsg;
+  //}
 
 
      
