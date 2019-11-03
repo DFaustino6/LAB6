@@ -75,9 +75,11 @@
 			<a href="#"><p>Forgot your password?</p></a>
 			<a href="#"><p>Forgot your username?</p></a>
 		</div>
+		{if $ErrorMsg not null}
 		<div class="container-fluid text-center" style="background-color: #ff9d9d;border-radius:5px">
 			<h4 style="color: red;">{$ErrorMsg}</h4>
 		</div>
+		{/if}
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
