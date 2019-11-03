@@ -11,11 +11,10 @@ $smarty->compile_dir = 'templates_c';
 $smarty->cache_dir = 'cache';
 $smarty->config_dir = 'configs';
 
- /*if(isset($_REQUEST['ErrorType'])){
-     $ErrorMsg=errorMsg($_REQUEST['ErrorType']);
-     $Username=$_REQUEST['Username'];
-     $Email=$_REQUEST['Email'];
-  }*/
+ if(isset($_SESSION['isError'])){
+    errorMsg();
+  }
+
 
   function errorMsg(){
     $ErrorMsg="Wrong email or password";
@@ -32,6 +31,7 @@ $smarty->config_dir = 'configs';
   $smarty->assign('MENU2',"SubForum2");
   $smarty->assign('MENU3',"SubForum3");
   $smarty->assign('href',"index.php");
+  $smarty->assign('ErrorMsg',$ErrorMsg);
   
   // Mostra a tabela
   $smarty->display('login_template.tpl');
