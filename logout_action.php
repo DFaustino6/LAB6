@@ -17,7 +17,7 @@ session_destroy();
    $smarty->assign('Msg',"See you back soon!");
    $smarty->assign('text_color',"black");
    $smarty->assign('back_color',"#ff9966");
-   $smarty->assign('logout_icon',"glyphicon glyphicon-log-out");
+   $smarty->assign('icon',"glyphicon glyphicon-log-out");
 
    $smarty->display('message_template.tpl');
 ?>

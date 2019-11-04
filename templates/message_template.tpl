@@ -41,7 +41,7 @@
 </nav>
 <div class="container" style="padding-top: 1%">
 	<div class="container-fluid text-center" style="background-color: {$back_color};border-radius:5px">
-		<h4 style="color: {$text_color};">{$Msg}<span class="glyphicon glyphicon-log-out"></span></h4>
+		<h4 style="color: {$text_color};">{$Msg}&nbsp;<span class="{$icon}"></span></h4>
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
