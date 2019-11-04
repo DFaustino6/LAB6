@@ -12,7 +12,7 @@ session_start();
       else
         SignIn();
   } 
-  
+  print_r($_REQUEST);
   function existingEmail($db,$Email){
     $query= "SELECT * from users where email = '$Email'";
     if(!($result = @ mysql_query($query,$db)))
