@@ -11,7 +11,7 @@ $smarty->compile_dir = 'templates_c';
 $smarty->cache_dir = 'cache';
 $smarty->config_dir = 'configs';
 
- if(isset($_SESSION['isError'])){
+ if(isset($_SESSION['isWrong'])){
     errorMsg();
   }
 
@@ -32,6 +32,8 @@ $smarty->config_dir = 'configs';
   $smarty->assign('MENU3',"SubForum3");
   $smarty->assign('href',"index.php");
   $smarty->assign('ErrorMsg',$ErrorMsg);
+  $smarty->assign('isWrong',$_SESSION['isWrong']);
+
   
   // Mostra a tabela
   $smarty->display('login_template.tpl');
