@@ -56,7 +56,6 @@ if($db) {
     $smarty->assign('MENU5',"Register");
     $smarty->assign('href4',"login.php");
     $smarty->assign('href5',"register.php");
-    $smarty->assign('login_id',-1);
   }
   // Mostra a tabela
   $smarty->display('index_template.tpl');
