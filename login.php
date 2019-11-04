@@ -12,7 +12,7 @@ $smarty->cache_dir = 'cache';
 $smarty->config_dir = 'configs';
 
  if(isset($_REQUEST['isWrong'])){
-    errorMsg();
+    $ErrorMsg=errorMsg();
   }
 
 
