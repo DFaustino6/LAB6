@@ -98,11 +98,11 @@
                 </div>
               </div>
               <div class="row" style="padding: 1%" >
-                <div class="col-sm-7">
+                <div class="col-sm-5">
                     <h4 style="color:white;">Created by:{$post.name}</h4>
                     <button type="button" class="btn btn-success" style="width: 30%"><span class="glyphicon glyphicon-edit"></span>&nbsp;Update</button>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-7">
                   <h4 style="color:white;text-align: right">Last updated:{$post.updated_at}</h4>
                 </div>
               </div>
