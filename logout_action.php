@@ -15,6 +15,8 @@ session_destroy();
    $smarty->assign('href4',"login.php");
    $smarty->assign('href5',"register.php");
    $smarty->assign('Msg',"See you back soon!");
+   $smarty->assign('text_color',"black");
+   $smarty->assign('back_color',"#ff9966");
 
    $smarty->display('message_template.tpl');
 ?>
