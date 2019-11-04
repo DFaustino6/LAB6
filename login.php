@@ -35,7 +35,7 @@ $smarty->config_dir = 'configs';
   $smarty->assign('href',"index.php");
   $smarty->assign('href4',"register.php");
   $smarty->assign('ErrorMsg',$ErrorMsg);
-  $smarty->assign('isWrong',$_SESSION['isWrong']);
+  $smarty->assign('isWrong',$_REQUEST['isWrong']);
 
 
   

@@ -75,7 +75,7 @@
 			<a href="#"><p>Forgot your password?</p></a>
 			<a href="#"><p>Forgot your username?</p></a>
 		</div>
-		{if $ErrorMsg ne 0}
+		{if $isWrong eq 1}
 		<div class="container-fluid text-center" style="background-color: #ff9d9d;border-radius:5px">
 			<h4 style="color: red;">{$ErrorMsg}</h4>
 		</div>
