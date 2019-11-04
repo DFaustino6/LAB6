@@ -48,6 +48,7 @@ if($db) {
     $smarty->assign('MENU5',"Welcome"." ".$_SESSION['username']);
     $smarty->assign('href4',"logout_action.php");
     $smarty->assign('href5',"#");
+    $smarty->assign('login_id',$_SESSION['id']);
   }
 
   if(!isset($_SESSION['username'])){
