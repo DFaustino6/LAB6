@@ -20,7 +20,7 @@
     <ul class="nav navbar-nav navbar-left">
         <li class="dropdown table-bordered" ><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white; background-color: #006699">Menu&nbsp;<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">{$MENU1}</a></li>
+            <li><a href="{$href1}">{$MENU1}</a></li>
             <li><a href="#">{$MENU2}</a></li>
             <li><a href="#">{$MENU3}</a></li>
           </ul> 
