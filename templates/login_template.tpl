@@ -46,9 +46,9 @@
 		<div class="container-fluid text-left" style="padding-top: 0.5%;border-radius: 5px">
 			 <form class="form-horizontal" action="login_action.php">
 			 	<div class="form-group">
-			      <label class="control-label col-sm-2" for="email">Username/Email:</label>
+			      <label class="control-label col-sm-2" for="email">Email:</label>
 			      <div class="col-sm-10">
-			        <input type="username" class="form-control" id="username" placeholder="Enter username/email" name="username" required>
+			        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
 			      </div>
 			    </div>
 			    <div class="form-group">
