@@ -12,11 +12,11 @@ $smarty->compile_dir = 'templates_c';
   $db = dbconnect($hostname,$db_name,$db_user,$db_passwd);
   if($db && !empty($_SESSION)){
       $Email = $_SESSION['username'];
-      $Pwd = $_SESSION['pwd']
+      $Pwd = $_SESSION['pwd'];
       if(!existingEmail($db,$Email) || !rightPwd($db,$Email,$Pwd))
         returnLogin();
       else
-        SignIn($db);
+        SignIn();
   } 
     
   function existingEmail($db,$Email){
@@ -48,7 +48,7 @@ $smarty->compile_dir = 'templates_c';
     header("Location: login.php?isWrong=1");
   }
 
-  function SignIn($db){
+  function SignIn(){
     header("Location: index.php?Username=$Username")
   }
 
