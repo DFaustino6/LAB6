@@ -45,7 +45,7 @@ if($db) {
   if(isset($_SESSION['username'])){
     $smarty->assign('MENU4',"Logout");
     $smarty->assign('MENU5',"Welcome"." ".$_SESSION['username']);
-    $smarty->assign('href4',"#");
+    $smarty->assign('href4',"logout.php");
     $smarty->assign('href5',"#");
   }
 
