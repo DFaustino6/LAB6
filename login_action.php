@@ -11,14 +11,13 @@ $smarty->compile_dir = 'templates_c';
 
   $db = dbconnect($hostname,$db_name,$db_user,$db_passwd);
   if($db && !empty($_SESSION)){
-    $Email = $_SESSION['username'];
-    $Pwd = $_SESSION['pwd']
-    if(!existingEmail($db,$Email) || !rightPwd($db,$Email,$Pwd)){
-      returnLogin();
-    }
-    else
-      SignIn($db);
-  }
+      $Email = $_SESSION['username'];
+      $Pwd = $_SESSION['pwd']
+      if(!existingEmail($db,$Email) || !rightPwd($db,$Email,$Pwd))
+        returnLogin();
+      else
+        SignIn($db);
+  } 
     
   function existingEmail($db,$Email){
     $query= "SELECT * from users where email = '$Email'";
