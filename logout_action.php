@@ -9,7 +9,7 @@ session_start();
 session_unset();
 session_destroy();
 
-
+   $smarty->assign('FORUMName',"DAW Lab");	
    $smarty->assign('MENU4',"Login");
    $smarty->assign('MENU5',"Register");
    $smarty->assign('href4',"login.php");
