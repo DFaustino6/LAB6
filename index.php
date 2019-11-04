@@ -40,8 +40,18 @@ if($db) {
   $smarty->assign('MENU2',"SubForum2");
   $smarty->assign('MENU3',"SubForum3");
   $smarty->assign('FORUMName',"DAW Lab");
-  $smarty->assign('MENU4',"Login");
-  $smarty->assign('MENU5',"Register");
+  if(isset($_SESSION['username'])){
+    $smarty->assign('MENU4',"Logout");
+    $smarty->assign('MENU5',"Welcome Username");
+    $smarty->assign('href4',"#");
+    $smarty->assign('href5',"#");
+  }
+  if(!isset($_SESSION['username'])){
+    $smarty->assign('MENU4',"Login");
+    $smarty->assign('MENU5',"Register");
+    $smarty->assign('href4',"login.php");
+    $smarty->assign('href5',"register.php");
+  }
   // Mostra a tabela
   $smarty->display('index_template.tpl');
 
