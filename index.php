@@ -42,13 +42,13 @@ if($db) {
   $smarty->assign('MENU2',"SubForum2");
   $smarty->assign('MENU3',"SubForum3");
   $smarty->assign('FORUMName',"DAW Lab");
-  $smarty->assign('login_id',$_SESSION['id']);
 
   if(isset($_SESSION['username'])){
     $smarty->assign('MENU4',"Logout");
     $smarty->assign('MENU5',"Welcome"." ".$_SESSION['username']);
     $smarty->assign('href4',"logout_action.php");
     $smarty->assign('href5',"#");
+    $smarty->assign('login_id',$_SESSION['id']);
   }
 
   if(!isset($_SESSION['username'])){
