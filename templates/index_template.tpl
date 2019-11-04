@@ -101,7 +101,7 @@
                 <div class="col-sm-6">
                     <h4 style="color:white;">Created by:{$post.name}</h4>
                     {if $post.user_id eq login_id}
-                    <button type="button" class="btn btn-success" style="width: 35%"><span class="glyphicon glyphicon-edit"></span>&nbsp;Update</button>
+                      <button type="button" class="btn btn-success" style="width: 35%"><span class="glyphicon glyphicon-edit"></span>&nbsp;Update</button>
                     {/if}
                 </div>
                 <div class="col-sm-6">
