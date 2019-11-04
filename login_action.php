@@ -41,11 +41,11 @@ session_start();
   }
 
   function returnLogin(){
-    //header("Location: login.php");
+    header("Location: login.php");
   }
 
   function SignIn(){
-    //header("Location: index.php");
+    header("Location: index.php");
   }
 
   mysql_close($db);
