@@ -33,7 +33,7 @@ $smarty->compile_dir = 'templates_c';
 
   function rightPwd($db,$Email,$Pwd){
     $PwdHash=substr(md5($_REQUEST['Pwd']),0,32);
-    $query="SELECT * from users where email = '$Email', passowrd_digest='$PwdHash'";
+    $query="SELECT * from users where email = '$Email', passowrd_digest='$PwdHash'";  
     if(!($result = @ mysql_query($query,$db)))
         showerror();
     $nrows  = mysql_num_rows($result);
@@ -49,7 +49,7 @@ $smarty->compile_dir = 'templates_c';
   }
 
   function SignIn(){
-    header("Location: index.php?Username=$Username")
+    header("Location: index.php?Username=$Username");
   }
 
   mysql_close($db);
