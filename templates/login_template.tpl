@@ -44,7 +44,7 @@
 			<h3 style="color: white;">Login</h3>
 		</div>
 		<div class="container-fluid text-left" style="padding-top: 0.5%;border-radius: 5px">
-			 <form class="form-horizontal" action="/action_page.php">
+			 <form class="form-horizontal">
 			 	<div class="form-group">
 			      <label class="control-label col-sm-2" for="email">Username/Email:</label>
 			      <div class="col-sm-10">
