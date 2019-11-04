@@ -2,6 +2,7 @@
 
 include 'db.php';
 session_start();
+session_destroy();
 // put full path to Smarty.class.php
 require('libs/Smarty.class.php');
 $smarty = new Smarty();
@@ -43,7 +44,7 @@ if($db) {
 
   if(isset($_SESSION['username'])){
     $smarty->assign('MENU4',"Logout");
-    $smarty->assign('MENU5',"Welcome Username");
+    $smarty->assign('MENU5',"Welcome"." ".$_SESSION['username']);
     $smarty->assign('href4',"#");
     $smarty->assign('href5',"#");
   }
