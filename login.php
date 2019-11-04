@@ -30,9 +30,13 @@ $smarty->config_dir = 'configs';
   $smarty->assign('MENU1',"SubForum1");
   $smarty->assign('MENU2',"SubForum2");
   $smarty->assign('MENU3',"SubForum3");
+  $smarty->assign('MENU4',"Register");
+  $smarty->assign('MENU5',"Login");
   $smarty->assign('href',"index.php");
+  $smarty->assign('href4',"register.php");
   $smarty->assign('ErrorMsg',$ErrorMsg);
   $smarty->assign('isWrong',$_SESSION['isWrong']);
+
 
   
   // Mostra a tabela
