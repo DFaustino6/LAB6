@@ -18,7 +18,7 @@ $smarty->compile_dir = 'templates_c';
       else
         SignIn();
   } 
-    
+   print_r(existingEmail());
   function existingEmail($db,$Email){
     $query= "SELECT * from users where email = '$Email'";
     if(!($result = @ mysql_query($query,$db)))
