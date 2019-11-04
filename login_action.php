@@ -29,7 +29,7 @@ session_start();
 
   function rightPwd($db,$Email,$Pwd){
     $PwdHash=substr(md5($_REQUEST['Pwd']),0,32);
-    $query="SELECT * from users where email = '$Email'AND passowrd_digest='$PwdHash'";  
+    $query="SELECT * from users where email = '$Email'AND password_digest='$PwdHash'";  
     if(!($result = @ mysql_query($query,$db)))
         showerror();
     $nrows  = mysql_num_rows($result);
