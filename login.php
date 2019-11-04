@@ -11,7 +11,7 @@ $smarty->compile_dir = 'templates_c';
 $smarty->cache_dir = 'cache';
 $smarty->config_dir = 'configs';
 
- if(isset($_SESSION['isWrong'])){
+ if(isset($_REQUEST['isWrong'])){
     errorMsg();
   }
 
