@@ -3,6 +3,7 @@
 <head>
 	<title>FORUM</title>
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<meta http-equiv="refresh" content="3; url=index.php">
 </head>
 <body>
 
@@ -40,7 +41,7 @@
 </nav>
 <div class="container" style="padding-top: 1%">
 	<div class="container-fluid text-center" style="background-color: #ff9d9d;border-radius:5px">
-		<h4 style="color: red;">{$ErrorMsg}</h4>
+		<h4 style="color: red;">{$Msg}</h4>
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
