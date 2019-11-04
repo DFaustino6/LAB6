@@ -40,8 +40,8 @@ if($db) {
   $smarty->assign('MENU2',"SubForum2");
   $smarty->assign('MENU3',"SubForum3");
   $smarty->assign('FORUMName',"DAW Lab");
-  $smarty->assign('MENU4',"Logout");
-  $smarty->assign('MENU5',"Welcome Username");
+  $smarty->assign('MENU4',"Login");
+  $smarty->assign('MENU5',"Register");
   // Mostra a tabela
   $smarty->display('index_template.tpl');
 

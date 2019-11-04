@@ -2,17 +2,11 @@
 
 include 'db.php';
 session_start();
-// put full path to Smarty.class.php
-require('libs/Smarty.class.php');
-$smarty = new Smarty();
-
-$smarty->template_dir = 'templates';
-$smarty->compile_dir = 'templates_c';
 
   $db = dbconnect($hostname,$db_name,$db_user,$db_passwd);
   if($db && !empty($_SESSION)){
-      $Email = $_SESSION['username'];
-      $Pwd = $_SESSION['pwd'];
+      $Email = $_REQUEST['email'];
+      $Pwd = $_REQUEST['pwd'];
       if(!existingEmail($db,$Email) || !rightPwd($db,$Email,$Pwd))
         returnLogin();
       else

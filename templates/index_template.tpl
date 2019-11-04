@@ -40,7 +40,7 @@
         </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#" style="color: white">{$MENU4}</a></li>
-      <li><a href="#" style="color: white">{$MENU5}</a></li>
+      <li><a href="login.php" style="color: white">{$MENU5}</a></li>
       <li><a style="color: white;">{$MENU6}</a></li>
     </ul>
   </div>
