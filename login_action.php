@@ -4,7 +4,7 @@ include 'db.php';
 session_start();
 
   $db = dbconnect($hostname,$db_name,$db_user,$db_passwd);
-  if($db && !empty($_SESSION)){
+  if($db && isset($_REQUEST['email'])){
       $Email = $_REQUEST['email'];
       $Pwd = $_REQUEST['pwd'];
       if(!existingEmail($db,$Email) || !rightPwd($db,$Email,$Pwd))
@@ -12,6 +12,8 @@ session_start();
       else
         SignIn();
   } 
+
+
   print_r($_REQUEST);
   function existingEmail($db,$Email){
     $query= "SELECT * from users where email = '$Email'";
@@ -39,11 +41,11 @@ session_start();
   }
 
   function returnLogin(){
-    header("Location: login.php?");
+    header("Location: login.php");
   }
 
   function SignIn(){
-    header("Location: index.php?Username=$Username");
+    header("Location: index.php");
   }
 
   mysql_close($db);
