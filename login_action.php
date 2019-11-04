@@ -1,7 +1,7 @@
 <?php
 
 include 'db.php';
-
+session_start();
 // put full path to Smarty.class.php
 require('libs/Smarty.class.php');
 $smarty = new Smarty();
