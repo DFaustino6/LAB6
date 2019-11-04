@@ -51,6 +51,7 @@ $smarty->config_dir = 'configs';
   $smarty->assign('MENU3',"SubForum3");
   $smarty->assign('FORUMName',"DAW Lab");
   $smarty->assign('MENU4',"Login");
+  $smarty->assign('href4',"login.php");
   $smarty->assign('MENU5',"Register");
   $smarty->assign('Username',$Username);
   $smarty->assign('Email',$Email);
