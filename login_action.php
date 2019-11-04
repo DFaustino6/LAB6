@@ -39,7 +39,7 @@ session_start();
   }
 
   function returnLogin(){
-    header("Location: login.php?isWrong=1");
+    header("Location: login.php?");
   }
 
   function SignIn(){
