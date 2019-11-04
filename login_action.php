@@ -27,7 +27,7 @@ session_start();
   }
 
   function rightPwd($db,$Email,$Pwd){
-    $PwdHash=substr(md5($_REQUEST['Pwd']),0,32);
+    $PwdHash=substr(md5($Pwd),0,32);
     $query="SELECT * from users where email = '$Email'AND password_digest='$PwdHash'";  
     print_r($query);
     if(!($result = @ mysql_query($query,$db)))
